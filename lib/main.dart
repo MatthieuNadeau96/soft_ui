@@ -25,9 +25,14 @@ class _MyHomePageState extends State<MyHomePage> {
       backgroundColor: Colors.grey[300],
       body: Center(
         child: GestureDetector(
-          onTap: () {
+          onLongPress: () {
             setState(() {
-              isPressed = !isPressed;
+              isPressed = true;
+            });
+          },
+          onLongPressUp: () {
+            setState(() {
+              isPressed = false;
             });
           },
           child: AnimatedContainer(
