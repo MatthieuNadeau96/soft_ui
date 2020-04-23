@@ -30,7 +30,9 @@ class _MyHomePageState extends State<MyHomePage> {
               isPressed = !isPressed;
             });
           },
-          child: Container(
+          child: AnimatedContainer(
+            duration: Duration(milliseconds: 300),
+            curve: Curves.easeInOut,
             width: 200,
             height: 200,
             child: Icon(Icons.android, size: 80),
