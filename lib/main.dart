@@ -98,8 +98,13 @@ class _MyHomePageState extends State<MyHomePage> {
                 ),
               ),
             ),
+            SizedBox(height: 30),
             Container(
               child: Switch(
+                activeColor: Colors.grey[200],
+                activeTrackColor: Colors.grey[500],
+                inactiveThumbColor: Colors.grey[850],
+                inactiveTrackColor: Colors.grey[500],
                 value: isNightMode,
                 onChanged: (bool n) {
                   setState(() {
